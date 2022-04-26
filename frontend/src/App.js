@@ -81,6 +81,7 @@ const App = () => {
     } catch (error) {
       console.log(error);
     }
+  }
   /*
   * This runs our function when the page loads.
   */
@@ -115,6 +116,6 @@ const App = () => {
     </div>
   );
 }
-}
+
 
 export default App;
