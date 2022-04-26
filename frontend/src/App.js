@@ -8,7 +8,7 @@ const App = () => {
   * Just a state variable we use to store our user's public wallet.
   */
   const [currentAccount, setCurrentAccount] = useState("");
-  const contractAddress = process.env.CADDRESS
+  //const contractAddress = process.env.CADDRESS;
   const checkIfWalletIsConnected = async () => {
     try {
       const { ethereum } = window;
@@ -88,7 +88,7 @@ const App = () => {
           I am Ohidur. Nice to meet you.
         </div>
 
-        <button className="waveButton" onClick={wave}>
+        <button className="waveButton" onClick={null}>
           Wave at Me
         </button>
 
@@ -104,4 +104,6 @@ const App = () => {
     </div>
   );
 }
-export default App
+}
+
+export default App;
