@@ -8,7 +8,8 @@ const App = () => {
   * Just a state variable we use to store our user's public wallet.
   */
   const [currentAccount, setCurrentAccount] = useState("");
-  //const contractAddress = process.env.CADDRESS;
+  const contractAddress = process.env.CADDRESS;
+  const contractABI = abi.abi;
   const checkIfWalletIsConnected = async () => {
     try {
       const { ethereum } = window;
