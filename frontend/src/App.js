@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { ethers } from ethers; 
 import './App.css';
+require("dotenv").config();
 
 const App = () => {
   /*
   * Just a state variable we use to store our user's public wallet.
   */
   const [currentAccount, setCurrentAccount] = useState("");
-
+  const contractAddress = process.env.CADDRESS
   const checkIfWalletIsConnected = async () => {
     try {
       const { ethereum } = window;
@@ -87,7 +88,7 @@ const App = () => {
           I am Ohidur. Nice to meet you.
         </div>
 
-        <button className="waveButton" onClick={null}>
+        <button className="waveButton" onClick={wave}>
           Wave at Me
         </button>
 
