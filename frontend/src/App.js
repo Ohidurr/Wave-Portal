@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { ethers } from ethers; 
+import { ethers } from 'ethers'; 
 import './App.css';
 import abi from "./utils/WavePortal.json";
 require("dotenv").config();
@@ -66,7 +66,7 @@ const App = () => {
 
         let count = await wavePortalContract.getTotalWaves();
         console.log("Retrieved total wave count...", count.toNumber());
-        
+
         const waveTxn = await wavePortalContract.wave();
         console.log("Mining...", waveTxn.hash);
 
