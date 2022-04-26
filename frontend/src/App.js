@@ -66,6 +66,15 @@ const App = () => {
 
         let count = await wavePortalContract.getTotalWaves();
         console.log("Retrieved total wave count...", count.toNumber());
+        
+        const waveTxn = await wavePortalContract.wave();
+        console.log("Mining...", waveTxn.hash);
+
+        await waveTxn.wait();
+        console.log("Mined -- ", waveTxn.hash);
+
+        count = await wavePortalContract.getTotalWaves();
+        console.log("Retrieved total wave count...", count.toNumber());
       } else {
         console.log("Ethereum object doesn't exist!");
       }
@@ -90,7 +99,7 @@ const App = () => {
           I am Ohidur. Nice to meet you.
         </div>
 
-        <button className="waveButton" onClick={null}>
+        <button className="waveButton" onClick={wave}>
           Wave at Me
         </button>
 
