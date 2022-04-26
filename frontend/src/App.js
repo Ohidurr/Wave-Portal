@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { ethers } from 'ethers'; 
 import './App.css';
-import abi from "./utils/WavePortal.json";
-require("dotenv").config();
+import abi from "./util/WavePortal.json";
+//require("dotenv").config();
 
 const App = () => {
   /*
@@ -86,7 +86,7 @@ const App = () => {
   */
   useEffect(() => {
     checkIfWalletIsConnected();
-  }, [])
+  }, []);
 
   return (
     <div className="mainContainer">
