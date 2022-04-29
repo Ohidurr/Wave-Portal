@@ -13,7 +13,7 @@ require("dotenv").config();
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
-
+const apiKey = process.env.ALCHEMY_API_KEY
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
