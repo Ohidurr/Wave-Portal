@@ -7,16 +7,16 @@
     "ethereum-waffle": "^3.0.0",
     "ethers": "^5.0.0",
     "hardhat": "^2.9.3"
-  },
-  "dependencies": {
-    "create-react-app": "^5.0.1",
-    "dotenv": "^16.0.0",
-    "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   }
+  // "dependencies": {
+  //   "create-react-app": "^5.0.1",
+  //   "dotenv": "^16.0.0",
+  //   "react-scripts": "^5.0.1"
+  // },
+  // "scripts": {
+  //   "start": "react-scripts start",
+  //   "build": "react-scripts build",
+  //   "test": "react-scripts test",
+  //   "eject": "react-scripts eject"
+  // }
 }
